@@ -1,36 +1,65 @@
 *{
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-size: cover;
+
     padding: 0;
-    box-sizing: border-box;
-    background-image: url(./Anh/da4e49a30ba82bfb66c01072a7a284d6.jpg);
-    background-size: cover;
-    
+    margin: 0;
+   background-color: #ffcc66;
+
+  
 }
 #app{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: column;
-    
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  
 }
+
+#name {
+  margin: 25px 250px 20px 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+
 .btn{
-    color:white;
-    background-color: royalblue;
-    width: fit-content;
-    border: none;
-    margin-right: 10px;
-    height: 30px;
-    font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 250px 20px 250px;
+  color:red;
 }
 #question {
-    font-size: 30px;
-    align-self: center;
-    color: red;
+  border: 1px solid black;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 250px 0 250px;
+  border-radius: 10px;
+  background-color: #c6e2ff;
+  color: black;
 }
 #answers-container {
-    align-self: center;
+  align-self: center;
 }
 #score {
-    align-self: flex-end;
-    color:red;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 36px;
+  background-color: #faf0e6;
+  border: none;
+  outline: none;
+  border-radius: 8px;
 }

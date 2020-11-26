@@ -1,25 +1,23 @@
 
-function merge2Strings() {
-    let st1 = document.getElementById('st1').value;
-    let st2 = document.getElementById('st2').value;
-    let arr1 = st1.split('');
-    let arr2 = st2.split('');
-    let length;
-    if (arr1.length <= arr2.length) {
-        length = arr2.length;
-    }
-    else {
-        length = arr1.length;
-    }
-    let strMerged = [];
-    for (let i = 0; i < length; i++) {
-        if(arr1[i] !== arr2[i] ){
-
-        strMerged.push(arr1[i]);
-        strMerged.push(arr2[i]);
+function arr(arr1,arr2){
+    let res=[];
+    for(let i=0;i<arr1.length;i++){
+        for(let j=0;j<arr2.length;j++){
+            if(arr1[i]==arr2[j]){
+                res.push(arr1[i]);
+            }
         }
     }
-
-
-    document.getElementById('merS').innerHTML = `  ${'kết quả ' ,strMerged }`
+    let a = arr1.concat(arr2);
+    var x = a.filter(word => word !=res[0]);
+    for(let i=1;i<res.length;i++){
+        let b = x;
+        b = x.filter(word => word != res[i]);
+        x = b;
+    }
+    return x;
 }
+
+
+
+console.log(arr( ["a","b",1,2,3,"c"] ,  ["a",1,3,4,5,6,2,"d"]));
