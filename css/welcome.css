@@ -1,0 +1,52 @@
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-image: url(../ảnh/a5.jpg);
+
+}
+
+.welcome-container .start {
+    margin:560px 560px 20px   500px;
+
+ 
+}
+
+
+
+.btn1 {
+    width: 260px;
+    height: 65px;
+    border-radius: 13px;
+    background-color: #0000ff;
+    color: white;
+    font-size: 30px;
+    font-family: Mustardo ;
+    transform:  color o.5s , background 0.5s;
+
+
+   
+   
+}
+
+.btn1:hover {
+    color: #0000ff;
+    background-color: white;
+}
+
+#audio-btn{
+    align-self: flex-end;
+    margin: 10px;
+}
+
+#sound-btn {
+    width: 60px;
+    align-self: flex-end;
+    background-image: url(../ảnh/soundOff.png);
+    background-size: contain;
+    height: 60px;
+
+     
+   
+}
+
