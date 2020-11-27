@@ -99,7 +99,20 @@ let showQuestion = () => {
                     button.classList.add("correct")
                     nextBtn.classList.remove("hide")
                 } else {
-                    alert("False")
+                    document.getElementById("question-container").classList.add("hide")
+                    let prizes = document.getElementsByClassName("prize")
+                    for (let prize of prizes) {
+                        prize.style = "display: none"
+                    }
+                    let announcement = document.createElement("div")
+                    let backBtn = document.createElement("button")
+                    backBtn.innerText = "Go back"
+                    backBtn.addEventListener("click", () => {
+                        view.setActiveScreen("welcomeScreen")
+                    })
+                    announcement.innerText = "You lost"
+                    document.getElementById("container").appendChild(announcement)
+                    document.getElementById("container").appendChild(backBtn)
                 }
             })
         })
