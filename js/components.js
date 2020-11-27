@@ -13,7 +13,7 @@ components.welcomPage = `<div class="welcome-container">
 `
 
 components.startPage = `
-<div class="container">
+<div id="container">
         
         <div id="question-container">
             <div id="question">  Question</div>
